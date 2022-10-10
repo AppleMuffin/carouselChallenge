@@ -11,6 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans:wght@200;300;400&family=PT+Serif&display=swap"
     rel="stylesheet">
+<script src="carousel.js" defer></script>
   <title>TikTok Carousel!</title>
 </head>
 <body>
@@ -18,29 +19,76 @@
     <h1>TikTok Carousel</h1>
     <h2>Scroll through random TikToks!</h2>
     <ul class="carouselContainer">
-      <li class="carousel">
-        <video src="https://v16-webapp.tiktok.com/16179201e9e0e48f17ab4d3dade61567/6344b0d0/video/tos/alisg/tos-alisg-pve-0037c001/04cab5c5ba8a49bc8c72d89380f003e6/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2642&bt=1321&cs=0&ds=3&ft=nFApP00Q12NvjsPi2mnRfCLVlcEbIxVvYg6i9tU&mime_type=video_mp4&qs=0&rc=Nzw7aTYzZzM3MzkzZ2ZpOUBpajRoazQ6Znk2ZTMzODczNEBhL2NeLjA1NWExYy8uLmEzYSNecDM0cjRvNmhgLS1kMS1zcw%3D%3D&l=202210101754410101902192111E540D67&btag=80000"></video>
+      <li class="carousel" data-carousel>
+        <ul class="slides" data-slides>
+          <li data-active>
+            <video
+            src="https://v16-webapp.tiktok.com/16179201e9e0e48f17ab4d3dade61567/6344b0d0/video/tos/alisg/tos-alisg-pve-0037c001/04cab5c5ba8a49bc8c72d89380f003e6/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2642&bt=1321&cs=0&ds=3&ft=nFApP00Q12NvjsPi2mnRfCLVlcEbIxVvYg6i9tU&mime_type=video_mp4&qs=0&rc=Nzw7aTYzZzM3MzkzZ2ZpOUBpajRoazQ6Znk2ZTMzODczNEBhL2NeLjA1NWExYy8uLmEzYSNecDM0cjRvNmhgLS1kMS1zcw%3D%3D&l=202210101754410101902192111E540D67&btag=80000">
+          </video>
+          </li>
+          <li>
+            <video
+            src="https://v16-webapp.tiktok.com/2a755072e5caa4b099130ec09620ba1d/6344b506/video/tos/maliva/tos-maliva-ve-0068c799-us/b746122e8bed4ff6b6a46e4be0ee6340/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2038&bt=1019&cs=0&ds=3&ft=kLO5qyy1Zmo0PzeumBkVQ68qmiHKJdmC0&mime_type=video_mp4&qs=0&rc=PGg1aTxpZmVpMzkzaWQ7Z0Bpajk8eDM6Zm92ZjMzZzczNEBiY2MyYDBgNi8xXjIyLjEtYSMvbGBecjRfanNgLS1kMS9zcw%3D%3D&l=202210101812060101921680802557B232&btag=80000">
+            </video>
+          </li>
+          <li>
+            <video
+              src="https://v16-webapp.tiktok.com/9a05d375d8037649b4eb100d8f136b8f/6344b51f/video/tos/useast2a/tos-useast2a-ve-0068c001/52fc19f595b24aa286bff6576c771b0d/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2348&bt=1174&cs=0&ds=3&ft=kLO5qyy1Zmo0PJDumBkVQ7ifmiHKJdmC0&mime_type=video_mp4&qs=0&rc=Nmk2Ozo8OzY7aGQ3Zmk6N0BpM2dsZ2k6ZjZoZzMzNzczM0A2YWFjMjVfNi0xYjRjNF4tYSNub2RwcjRvcy5gLS1kMTZzcw%3D%3D&l=2022101018131301022307814811598E98&btag=80000">
+            </video>
+          </li>
+        </ul>
         <div class="titleNavigate">
-          <!-- ?wonder if there's an algorithm that categorizes tiktoks by topic. if you find that you could make categorized tiktok carousel generators. -->
-          <button class="back">&#10094;</button>
+          <button class="back" data-button-direction="back">&#10094;</button>
           <h3>TikTok Recipes</h3>
-          <button class="next">&#10095;</button>
+          <button class="next" data-button-direction="next">&#10095;</button>
         </div>
       </li>
-      <li class="carousel">
-        <video src="https://v16-webapp.tiktok.com/2a755072e5caa4b099130ec09620ba1d/6344b506/video/tos/maliva/tos-maliva-ve-0068c799-us/b746122e8bed4ff6b6a46e4be0ee6340/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2038&bt=1019&cs=0&ds=3&ft=kLO5qyy1Zmo0PzeumBkVQ68qmiHKJdmC0&mime_type=video_mp4&qs=0&rc=PGg1aTxpZmVpMzkzaWQ7Z0Bpajk8eDM6Zm92ZjMzZzczNEBiY2MyYDBgNi8xXjIyLjEtYSMvbGBecjRfanNgLS1kMS9zcw%3D%3D&l=202210101812060101921680802557B232&btag=80000"></video>
+      <li class="carousel" data-carousel>
+        <ul class="slides" data-slides>
+          <li data-active>
+            <video
+              src="https://v16-webapp.tiktok.com/16179201e9e0e48f17ab4d3dade61567/6344b0d0/video/tos/alisg/tos-alisg-pve-0037c001/04cab5c5ba8a49bc8c72d89380f003e6/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2642&bt=1321&cs=0&ds=3&ft=nFApP00Q12NvjsPi2mnRfCLVlcEbIxVvYg6i9tU&mime_type=video_mp4&qs=0&rc=Nzw7aTYzZzM3MzkzZ2ZpOUBpajRoazQ6Znk2ZTMzODczNEBhL2NeLjA1NWExYy8uLmEzYSNecDM0cjRvNmhgLS1kMS1zcw%3D%3D&l=202210101754410101902192111E540D67&btag=80000">
+            </video>
+          </li>
+          <li>
+            <video
+              src="https://v16-webapp.tiktok.com/2a755072e5caa4b099130ec09620ba1d/6344b506/video/tos/maliva/tos-maliva-ve-0068c799-us/b746122e8bed4ff6b6a46e4be0ee6340/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2038&bt=1019&cs=0&ds=3&ft=kLO5qyy1Zmo0PzeumBkVQ68qmiHKJdmC0&mime_type=video_mp4&qs=0&rc=PGg1aTxpZmVpMzkzaWQ7Z0Bpajk8eDM6Zm92ZjMzZzczNEBiY2MyYDBgNi8xXjIyLjEtYSMvbGBecjRfanNgLS1kMS9zcw%3D%3D&l=202210101812060101921680802557B232&btag=80000">
+            </video>
+          </li>
+          <li>
+            <video
+              src="https://v16-webapp.tiktok.com/9a05d375d8037649b4eb100d8f136b8f/6344b51f/video/tos/useast2a/tos-useast2a-ve-0068c001/52fc19f595b24aa286bff6576c771b0d/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2348&bt=1174&cs=0&ds=3&ft=kLO5qyy1Zmo0PJDumBkVQ7ifmiHKJdmC0&mime_type=video_mp4&qs=0&rc=Nmk2Ozo8OzY7aGQ3Zmk6N0BpM2dsZ2k6ZjZoZzMzNzczM0A2YWFjMjVfNi0xYjRjNF4tYSNub2RwcjRvcy5gLS1kMTZzcw%3D%3D&l=2022101018131301022307814811598E98&btag=80000">
+            </video>
+          </li>
+        </ul>
         <div class="titleNavigate">
-          <button class="back">&#10094;</button>
+          <button class="back" data-button-direction="back">&#10094;</button>
           <h3>TikTok Recipes</h3>
-          <button class="next">&#10095;</button>
+          <button class="next" data-button-direction="next">&#10095;</button>
         </div>
       </li>
-      <li class="carousel">
-        <video src="https://v16-webapp.tiktok.com/9a05d375d8037649b4eb100d8f136b8f/6344b51f/video/tos/useast2a/tos-useast2a-ve-0068c001/52fc19f595b24aa286bff6576c771b0d/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2348&bt=1174&cs=0&ds=3&ft=kLO5qyy1Zmo0PJDumBkVQ7ifmiHKJdmC0&mime_type=video_mp4&qs=0&rc=Nmk2Ozo8OzY7aGQ3Zmk6N0BpM2dsZ2k6ZjZoZzMzNzczM0A2YWFjMjVfNi0xYjRjNF4tYSNub2RwcjRvcy5gLS1kMTZzcw%3D%3D&l=2022101018131301022307814811598E98&btag=80000"></video>
+      <li class="carousel" data-carousel>
+        <ul class="slides" data-slides>
+          <li data-active>
+            <video
+              src="https://v16-webapp.tiktok.com/16179201e9e0e48f17ab4d3dade61567/6344b0d0/video/tos/alisg/tos-alisg-pve-0037c001/04cab5c5ba8a49bc8c72d89380f003e6/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2642&bt=1321&cs=0&ds=3&ft=nFApP00Q12NvjsPi2mnRfCLVlcEbIxVvYg6i9tU&mime_type=video_mp4&qs=0&rc=Nzw7aTYzZzM3MzkzZ2ZpOUBpajRoazQ6Znk2ZTMzODczNEBhL2NeLjA1NWExYy8uLmEzYSNecDM0cjRvNmhgLS1kMS1zcw%3D%3D&l=202210101754410101902192111E540D67&btag=80000">
+            </video>
+          </li>
+          <li>
+            <video
+              src="https://v16-webapp.tiktok.com/2a755072e5caa4b099130ec09620ba1d/6344b506/video/tos/maliva/tos-maliva-ve-0068c799-us/b746122e8bed4ff6b6a46e4be0ee6340/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2038&bt=1019&cs=0&ds=3&ft=kLO5qyy1Zmo0PzeumBkVQ68qmiHKJdmC0&mime_type=video_mp4&qs=0&rc=PGg1aTxpZmVpMzkzaWQ7Z0Bpajk8eDM6Zm92ZjMzZzczNEBiY2MyYDBgNi8xXjIyLjEtYSMvbGBecjRfanNgLS1kMS9zcw%3D%3D&l=202210101812060101921680802557B232&btag=80000">
+            </video>
+          </li>
+          <li>
+            <video
+              src="https://v16-webapp.tiktok.com/9a05d375d8037649b4eb100d8f136b8f/6344b51f/video/tos/useast2a/tos-useast2a-ve-0068c001/52fc19f595b24aa286bff6576c771b0d/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=2348&bt=1174&cs=0&ds=3&ft=kLO5qyy1Zmo0PJDumBkVQ7ifmiHKJdmC0&mime_type=video_mp4&qs=0&rc=Nmk2Ozo8OzY7aGQ3Zmk6N0BpM2dsZ2k6ZjZoZzMzNzczM0A2YWFjMjVfNi0xYjRjNF4tYSNub2RwcjRvcy5gLS1kMTZzcw%3D%3D&l=2022101018131301022307814811598E98&btag=80000">
+            </video>
+          </li>
+        </ul>
         <div class="titleNavigate">
-          <button class="back">&#10094;</button>
+          <button class="back" data-button-direction="back">&#10094;</button>
           <h3>TikTok Recipes</h3>
-          <button class="next">&#10095;</button>
+          <button class="next" data-button-direction="next">&#10095;</button>
         </div>
       </li>
     </ul>
