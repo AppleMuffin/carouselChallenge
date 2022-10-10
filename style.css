@@ -1,0 +1,65 @@
+/* default styles */
+
+body {
+  font-family: 'Noto Sans',
+    sans-serif;
+    font-size: 1rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+/* carousel styles */
+
+.carouselContainer {
+  
+  background-color: #b5838d;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.carousel {
+  width: 30%;
+  padding: 20px 0;
+  position: relative;
+  justify-content: center;
+}
+
+.titleNavigate {
+  width: 65%;
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.titleNavigate h3 {
+  white-space: nowrap;
+}
+
+
+video {
+  height: 100%;
+  max-width: 100%;
+}
+
+
+
+
+
