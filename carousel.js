@@ -1,5 +1,6 @@
 //!potential improvements: I've programmed it so a currently playing video in a carousel will stop (and reset to the beginning) when I navigate to a new video in the same carousel. Could force all videos in other carousels to stop as well when I navigate (or play) a video, so only one video can play at any time.
 //!maybe add some more video functions? like a volume button. Guess this depends on what the desired product is.
+//!Add accessibility! 
 //! Looked into randomizing TikTok videos. Their API documentation doesn't seem to support it though. Tried making my own algorithm by just randomly generating characters like so: https://tiktok.com/[RANDOMIZED_CHARACTERS], but it redirects - seems like this used to work in the past based on searching other people's github repos, but TikTok must have plugged this :'(
 
 // give all video elements pause and play functionality on click.
