@@ -54,7 +54,7 @@ li {
   display: none;
 }
 
-.slides li[data-active] {
+.slides li[data-active="true"] {
   display: block;
 }
 .titleNavigate {
