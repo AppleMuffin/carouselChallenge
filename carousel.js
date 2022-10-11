@@ -25,7 +25,6 @@ buttons.forEach(button => {
 
     //function test case: reset a running video to the beginning when you navigate to a new video
     const slidesList= button.closest('[data-carousel]').children[0].children
-    console.log(slidesList)
     for (slide of slidesList) {
       const video = slide.children[0]
       video.currentTime = 0
